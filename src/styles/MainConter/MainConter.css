@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Main_Container{
+    flex: 1;
+    display: flex;
+}
+
+.Container_View{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: black;
+    padding: 30px;
+}
+
+.Container_View .Container_Title{
+    margin-top: 20px;
+    font-size: 30px;
+    color: white;
+
+}
+

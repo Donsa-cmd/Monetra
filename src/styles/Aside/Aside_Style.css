@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.aside {
+    background:  #0b0f2a; /* tono más profesional futurista */
+    width: 250px;
+    min-height: 100vh;
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.aside-logo {
+    width: 120px;
+    height: 60px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.aside-title {
+    color: #6f6f8d;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 20px 0 10px;
+}
+
+.aside-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.btn {
+    width: 100%;
+    background: transparent;
+    border: none;
+    color: #cfd3ff;
+    text-align: left;
+    padding: 10px 12px;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn:hover {
+    background: rgb(114 92 255 / 77%);
+    color: #b6a6ff;
+}
+
+.btn.active {
+    background: #6b42ff;
+    color: #fff;
+}
+
+.menu_logo{
+    width: 120px;
+    height: 60px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.Item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.Icon {
+    width: 22px;
+    height: 22px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
