@@ -1,5 +1,4 @@
 import AsideItem from '../../components/UI/AsideItem';
-
 import dashboardIcon from '../../assets/img/Menu.png';
 import issuesIcon from '../../assets/img/advertencia.png';
 import filesIcon from '../../assets/img/archivos.png';
@@ -7,13 +6,14 @@ import threatDetailsIcon from '../../assets/img/archivo.png';
 import settingsIcon from '../../assets/img/ajuste.png';
 import SupportIcon from '../../assets/img/support.png';
 
+
 const menu = [
     {
         title: "General",
         items: [
-            { text: "Overview", icon: dashboardIcon },
-            { text: "Issues", icon: issuesIcon },
-            { text: "Files", icon: filesIcon }
+            { text: "Overview", icon: dashboardIcon, to: "/overview" },
+            { text: "Issues", icon: issuesIcon, to: "/issues" },
+            { text: "Files", icon: filesIcon, to: "/files" }
         ]
     },
     {
@@ -53,6 +53,7 @@ function Aside() {
                                     key={i}
                                     icon={item.icon}
                                     text={item.text}
+                                    to={item.to}
                                 />
                             ))}
                         </ul>

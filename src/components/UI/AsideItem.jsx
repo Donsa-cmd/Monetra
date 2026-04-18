@@ -1,7 +1,10 @@
-function AsideItem({ icon, text }) {
+import { Link } from "react-router-dom";
+
+
+function AsideItem({ icon, text, to }) {
     return (
         <li className="Item">
-            <button className="btn">
+            <Link to={to} className="btn">
                 {icon && (
                     <div 
                         className="Icon" 
@@ -9,7 +12,7 @@ function AsideItem({ icon, text }) {
                     />
                 )}
                 {text}
-            </button>
+            </Link>
         </li>
     );
 }

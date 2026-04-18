@@ -9,7 +9,7 @@ function Search() {
   };
 
   return (
-    <div className="Search_Zone">
+    <div className="Search">
       <form id="content">
         <input
           type="text"

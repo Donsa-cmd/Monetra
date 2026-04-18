@@ -1,14 +1,15 @@
-import Search from "../MainConter/Search";
+import Header from "./Header";
 
+import "../../styles/MainConter/header.css"
 
-function MainConter() {
+function MainConter({ children }) {
     return(
         <div className="Main_Container">
             <div className="Container_View"> 
-                <div className="Search_Zone">
-                    <Search />
-                </div>
-                <p className="Container_Title">Hello, Usuario</p>
+                { /*Header Fijo */ }
+                { <Header /> }
+
+                { children }
             </div>
         </div>
     );

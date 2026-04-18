@@ -1,0 +1,75 @@
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+/* IZQUIERDA */
+.Header_Left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.User_Image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+}
+
+/* TEXTO */
+.User_Info {
+    display: flex;
+    flex-direction: column;
+}
+
+.Welcome_Text {
+    color: #aaa;
+    font-size: 14px;
+}
+
+.User_Name {
+    color: white;
+    font-size: 22px;
+}
+
+.User_Role {
+    color: #6c5ce7;
+    font-size: 13px;
+}
+
+/* Seacher */
+
+.Search_Zone {
+    position: absolute;
+    right: calc(100% - 90%);
+    top: calc(100% - 94%);
+}
+
+
+/* DERECHA */
+.Header_Right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* ICONOS */
+.Header_Icons {
+    display: flex;
+    gap: 10px;
+}
+
+.Icon_Message,
+.Icon_Notification {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #1e1e2f;
+    cursor: pointer;
+}
