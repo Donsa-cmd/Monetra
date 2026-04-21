@@ -15,11 +15,18 @@
 
 .Card_Content {
     color: white;
+    display: flex;
+    justify-content: space-between;
 }
 
+.Overview {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px 0;
+}
 
 .Overview_Grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px;
 }
